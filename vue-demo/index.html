@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>VueJS</title>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+      <!-- <div id="vue-app">
+        <h1>{{name}}</h1>
+        <h2>{{lname}}</h2>
+        <h1>{{greet('Morning')}}</h1>
+        <a v-bind:href="web">Google</a>
+        <p v-html="websitetag"></p>
+      </div> -->
+
+      <!-- <div id="vue-app">
+        <h1>Events</h1>
+        <button @click.once="add(1)">Add a year</button>
+        <button v-on:click="subtract(1)">Subtract a year</button>
+        <button v-on:dbclick="add(10)">Add 10 year</button>
+        <button @dbclick="subtract(10)">Subtract 10 year</button>
+        <p>My age is {{age}}</p>
+      <div id="canvas" v-on:mousemove="updatexy">
+      {{x}},{{y}}
+      </div>
+
+      </div>  -->
+
+
+    <div id="vue-app">
+    <!-- <div @click="available=!available" v-bind:class="{available:available}">
+      <span>Aman</span>
+    </div> -->
+    <div @click="available=!available" v-bind:class="compClasses">
+    <span>Aman</span>
+    </div>    
+    </div>
+     <script src="app.js"></script>
+    </body>
+</html>
